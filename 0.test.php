@@ -1,3 +1,3 @@
 <?php 
-phpinfo();
+phpinfo(); #basic php or information php
 ?>
