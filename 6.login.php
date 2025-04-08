@@ -7,8 +7,14 @@
        $login=TRUE;
      }
    } 
-   if ($login==TRUE)  #determine login if true or false
-     echo "Login successful";
-  else
-     echo "Account/Password Error";
+#If login is successful: display a message and redirect to bulletin.php after 3 seconds
+   if ($login==TRUE){echo "Login successful";
+    echo "<meta http-equiv=REFRESH content='3,url=bulletin.php'>";
+  }
+  else{
+#if login fails: display error message and still redirect to bulletin.php after 3 seconds
+    echo "Account/Password Error";
+    echo "<meta http-equiv=REFRESH content='3,url=bulletin.php'>";
+  }
+  
 ?>
